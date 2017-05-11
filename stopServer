@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Stop Fabric V1 WebAPIServer 
+ps -ef | grep "node app" | grep -v grep | awk '{print $2}' | xargs kill
+
+# Stop local Fabric V1 Network
+./netStop

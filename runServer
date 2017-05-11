@@ -1,0 +1,32 @@
+#!/bin/bash
+
+function installNodeModules() {
+	echo
+	if [ -d node_modules ]; then
+		echo "============== node modules installed already ============="
+	else
+		echo "============== Installing node modules ============="
+		npm install
+	fi
+	echo
+}
+
+installNodeModules
+
+# Start local Fabric V1 Network
+./netStart
+
+# Start Fabric V1 WebAPIServer 
+export PORT=4000
+node app &
+sleep 3
+
+# Create Channel: mychannel and join peers form Org1 and Org2
+./scripts/createChannelJoinPeers.sh
+
+echo
+echo "Hyperledger Fabric v1.0.0-alpha Network is ready to work ..."
+echo "Hyperledger Fabric v1.0.0-alpha WebAPISerer is ready to work ..."
+echo 
+
+

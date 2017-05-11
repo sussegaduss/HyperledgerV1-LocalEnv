@@ -1,0 +1,3 @@
+[32minfo[39m: Returning a new winston logger with default configurations
+[32m[2017-05-11 10:27:19.782] [INFO] SampleWebApp - [39m****************** SERVER STARTED ************************
+[32m[2017-05-11 10:27:19.783] [INFO] SampleWebApp - [39m**************  http://localhost:4000  ******************

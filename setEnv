@@ -1,0 +1,14 @@
+echo
+echo
+export FABNET="$HOME/fabnet"
+export PATH="$PATH:$FABNET:$FABNET/scripts"
+echo
+echo "Chaincodes Paths"
+export CC_DNA="/home/blockchain/go/src/hub.jazz.net/git/mvpdna/mvpdna-api/src/chaincode/dna"
+export CC_MARBLES="github.com/IBM-Blockchain/marbles/chaincode/src/marbles"
+export CC_EXAMPLE="github.com/chaincode/example_cc"
+echo "CC_DNA=$CC_DNA" 
+echo "CC_MARBLES=$CC_MARBLES"
+echo "CC_EXAMPLE=$CC_EXAMPLE"
+echo
+echo
